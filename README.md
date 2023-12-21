@@ -35,7 +35,7 @@ go test -v -race -tags slow .
 ## tcplimit-proxy
 As a bonus, this package provides a `tcplmit-proxy` tool that is a basic HTTP proxy that can be used for traffic shaping.
 
-![tcplimit-proxy](https://github.com/ksinica/tcplimit/assets/8190916/af2cc2f9-85f7-4f60-b2b8-730354f248bd)
+![tcplimit-proxy](https://github.com/ksinica/tcplimit/assets/8190916/9e44883e-3841-46ff-9146-0220793bb705)
 
 Proxy can be installed and started by invoking:
 ```
