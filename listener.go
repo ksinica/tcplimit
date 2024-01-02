@@ -44,9 +44,9 @@ func (l *limitedListener) SetLimits(global, local int) error {
 	return nil
 }
 
-func NewListener(l net.Listener) (LimitedListener, error) {
+func NewListener(l net.Listener) LimitedListener {
 	return &limitedListener{
 		Listener: l,
 		limiter:  NewLimiter(),
-	}, nil
+	}
 }
