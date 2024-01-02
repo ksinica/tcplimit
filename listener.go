@@ -37,7 +37,7 @@ func (l *limitedListener) SetLimits(global, local int) error {
 		return fmt.Errorf("could not set global limit: %w", err)
 	}
 
-	if err := l.limiter.SetLocalLimit(rate.Limit(global)); err != nil {
+	if err := l.limiter.SetLocalLimit(rate.Limit(local)); err != nil {
 		return fmt.Errorf("could not set local limit: %w", err)
 	}
 
